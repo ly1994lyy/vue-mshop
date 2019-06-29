@@ -14,5 +14,11 @@ export default new Vuex.Store({
   },
   actions: {
 
+  },
+  getters:{
+    isLogin:state =>{
+      return !!state.token
+    }
   }
+  
 })

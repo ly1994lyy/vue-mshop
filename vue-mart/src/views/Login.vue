@@ -60,10 +60,10 @@ export default {
     methods:{
         async handleLogin(e){
             e.preventDefault();
-            const res =await this.$http.post('/api/login',{params:{
+            const res =await this.$http.post('/api/login',{
                 username:this.model.username,
                 password:this.model.password
-            }})
+            })
             const {code,token,message} = res.data
             if(code == 0){
                 //登录成功

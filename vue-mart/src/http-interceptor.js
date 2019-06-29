@@ -20,14 +20,23 @@ axios.interceptors.response.use(
         if(response.status===200){
             const data = response.data
             if(data.code==-1){
-                store.commit('setToken','')
-                localStorage.removeItem('token')
-                router.push({
-                    path:'/login',
-                    query:router.currentRoute.path
-                })
+                clearHandle()
             }
         }
         return response
+    },
+    err =>{
+        if(err.response.status===401){
+            clearHandle()
+        }
     }
 )
+
+function clearHandle(){
+    store.commit('setToken','')
+    localStorage.removeItem('token')
+    router.push({
+        path:'/login',
+        query:router.currentRoute.path
+    })
+}
