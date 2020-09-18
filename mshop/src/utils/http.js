@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const http = axios.create({
-    baseURL:
+    baseURL: "https://api.it120.cc/mshop"
 })
 
 

@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <router-view />
     <Footer />
   </div>
 </template>
@@ -9,8 +9,12 @@
 import Footer from '../components/Footer'
 
 export default {
-  components:{
-    Footer,
-  }
+    components:{
+        Footer,
+    }
 }
 </script>
+
+<style>
+
+</style>
