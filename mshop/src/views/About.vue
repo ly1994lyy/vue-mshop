@@ -1,16 +1,17 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <Footer />
+    <div @click="add">导入</div>
   </div>
 </template>
 
 <script>
-import Footer from '../components/Footer'
+import { insertData } from '../utils/data'
 
 export default {
-  components:{
-    Footer,
+  methods:{
+    async add(){
+      await insertData()
+    }
   }
 }
 </script>

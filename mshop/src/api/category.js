@@ -1,5 +1,5 @@
 import { get } from "../utils/http"
 
 export const getCate = (params) => {
-    return get('cms/category/list',params)
+    return get('shop/goods/category/all',params)
 }

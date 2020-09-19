@@ -10,7 +10,11 @@ const routes = [
     name: "Main",
     component: Main,
     children: [
-      { path: "/", name: "Home", component: () => import("../views/Home.vue") },
+      {
+        path: "/",
+        name: "Home",
+        component: () => import("../views/Home.vue"),
+      },
       {
         path: "/category",
         name: "Category",
@@ -29,9 +33,14 @@ const routes = [
     ],
   },
   {
-    path: "/category",
-    name: "Category",
-    component: () => import("../views/Category.vue"),
+    path: "/login",
+    name: "Login",
+    component: () => import("../views/Login.vue"),
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: () => import("../views/About.vue"),
   },
 ];
 

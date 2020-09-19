@@ -56,5 +56,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.van-tabbar-item__icon{
+  img{
+    width:65px;
+    height: 50px;
+  }
+}
 </style>
