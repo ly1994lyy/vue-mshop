@@ -14,7 +14,7 @@ import {
   Sidebar, 
   SidebarItem,
   Grid, 
-  GridItem
+  GridItem,
 } from "vant";
 
 Vue.use(Tabbar)

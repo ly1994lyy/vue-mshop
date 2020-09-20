@@ -13,7 +13,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return {
+      value:''
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
